@@ -92,14 +92,14 @@ export default function GameOfLifeBackground() {
       if (timestamp - lastUpdate > updateInterval) {
         nextGeneration();
         draw();
-        generation++;
-      if (generation % 100 === 0) {
+        //generation++;
+      {/*if (generation % 100 === 0) {
         for (let i = 0; i < 250; i++) {
           const r = Math.floor(Math.random() * rows);
           const c = Math.floor(Math.random() * cols);
           grid[r][c] = 1;
         }
-      }
+      } */}
 
         lastUpdate = timestamp;
       }
