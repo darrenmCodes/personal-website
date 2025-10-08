@@ -84,7 +84,7 @@ export default function GameOfLifeBackground() {
     window.addEventListener("mousemove", handleMouseMove, { passive: true });
 
     let lastUpdate = 0;
-    const updateInterval = 100; // milliseconds per update (lower = faster)
+    const updateInterval = 50; // milliseconds per update (lower = faster)
     let animationFrameId: number;
 
     function animate(timestamp: number) {
